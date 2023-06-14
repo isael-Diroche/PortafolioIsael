@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 100px;
+  gap: 40px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* Starting with the main navbar */
+.main_navbar {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+  gap: 48px;
+  background: #2D2D2D;
+  border-bottom: 1px solid #DDE1E6;
+}
+.main_navbar .logo_navbar {
+  border: 1px solid red;
+}
+.main_navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  width: 547px;
+  height: 100%;
+}
+.main_navbar ul li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #949494;
+}
+.main_navbar ul .link_github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 24px;
+  gap: 5px;
+  width: 116px;
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+}
+.main_navbar ul .link_github a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+/* Seccion de presentación */
+.present_section {
+  width: 100%;
+  height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 80px 80px;
+  gap: 80px;
+  background: #F2F4F8;
+}
+.present_section .isael-avatar {
+  width: 549px;
+  height: 525px;
+}
+.present_section .present_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0px;
+  gap: 64px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.present_section .present_content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 19px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.present_section .present_content .content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+}
+.present_section .present_content .content .text h5 {
+  width: 100%;
+  height: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #898F9F;
+}
+.present_section .present_content .content .text .present_name {
+  width: 100%;
+  height: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 110%;
+  color: #21272A;
+}
+.present_section .present_content .content .text .present_skill {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  color: #21272A;
+}
+.present_section .present_content .content .text .present_skill span {
+  color: #256AF3;
+}
+.present_section .present_content .content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #836D7E;
+}
+.present_section .present_content .contact_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 12px;
+  width: 168px;
+  height: 56px;
+  background: #2D2D2D;
+  border-radius: 50px;
+  transition: all 500ms;
+}
+.present_section .present_content .contact_button a {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  transition: all 500ms;
+}
+.present_section .present_content .contact_button a:hover {
+  gap: 9px;
+  transition: gap 500ms;
+}
+.present_section .present_content .contact_button:hover {
+  background: #363636;
+  transition: all 500ms;
+}
+
+/* Seccion de Blog */
+.blog_section .present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+}
+.blog_section .present div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+.blog_section .present div h1.title {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2E3646;
+}
+.blog_section .present div h1.title span {
+  color: #256AF3;
+}
+.blog_section .present div p.subtitle {
+  width: 100%;
+  height: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.001em;
+  color: #5F6D7E;
+}
+.blog_section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  gap: 40px;
+  width: 100%;
+  height: auto;
+}
+.blog_section .content .posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  gap: 40px;
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  flex-wrap: wrap;
+}
+.blog_section .content .posts article {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+  max-width: 373px;
+  height: 493px;
+  background: #FFFFFF;
+  border: 1px solid #E6E7EA;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog_section .content .posts article .imagen {
+  height: 180px;
+  overflow: hidden;
+}
+.blog_section .content .posts article .imagen a img {
+  width: 100%;
+}
+.blog_section .content .posts article .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 24px;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+}
+.blog_section .content .posts article .body .about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  width: 100%;
+  height: 197px;
+}
+.blog_section .content .posts article .body .about .date-publish {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 5px;
+}
+.blog_section .content .posts article .body .about .date-publish i {
+  font-size: 20px;
+  color: #6A7181;
+}
+.blog_section .content .posts article .body .about .date-publish span {
+  margin: auto 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #6A7181;
+}
+.blog_section .content .posts article .body .about .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 100%;
+  height: 168px;
+}
+.blog_section .content .posts article .body .about .desc .title {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #31343A;
+  width: 100%;
+  height: 64px;
+  display: -webkit-box; /* Establece el cuadro flexible */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  -webkit-line-clamp: 2; /* Establece el número máximo de líneas */
+  -webkit-box-orient: vertical; /* Establece la orientación del cuadro verticalmente */
+  text-overflow: ellipsis; /* Muestra los puntos suspensivos cuando el contenido se desborda */
+}
+.blog_section .content .posts article .body .about .desc .description {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E545F;
+  height: 96px;
+  display: -webkit-box; /* Establece el cuadro flexible */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  -webkit-line-clamp: 4; /* Establece el número máximo de líneas */
+  -webkit-box-orient: vertical; /* Establece la orientación del cuadro verticalmente */
+  text-overflow: ellipsis; /* Muestra los puntos suspensivos cuando el contenido se desborda */
+}
+.blog_section .content .posts article .body .button-read {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.blog_section .content .posts article .body .button-read a.read-more {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 8px;
+  border: 2px solid #256AF4;
+  border-radius: 8px;
+  color: #256AF4;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #256AF4;
+  transition: background-color 0.3s ease;
+}
+.blog_section .content .posts article .body .button-read a.read-more:hover {
+  background-color: #256AF4;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.blog_section .content .posts article .body .button-read .lecture-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: auto;
+  height: auto;
+}
+.blog_section .content .posts article .body .button-read .lecture-time hr {
+  width: 1.3px;
+  height: 16.67px;
+  background: #D2D5DA;
+  border-radius: 2px;
+  border: none;
+}
+.blog_section .content .posts article .body .button-read .lecture-time i {
+  color: #6A7181;
+  font-size: 16.67px;
+}
+.blog_section .content .posts article .body .button-read .lecture-time span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6A7181;
+}
+
+@media (max-width: 426px) {
+  main section {
+    padding: 50px 20px 100px;
+  }
+  main section .present {
+    padding: 0px 12px !important;
+  }
+  main section .present div h1.title {
+    font-size: 28px !important;
+  }
+  main section .present div p.subtitle {
+    font-size: 14px !important;
+  }
+  main section .content {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
